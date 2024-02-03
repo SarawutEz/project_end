@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/stayle.css">
+    <script src="/JS/script.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <img src="/IMG/AMVM_NOBG.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Anime</a></li>
+                    <li><a href="#">Movie</a></li>
+                    <li><a href="#">Manga </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mySlides_M fade">
+            <video autoplay loop muted>
+                <source src="/video/lofi_groom_no_editv2.mp4" type="video/mp4">
+            </video>
+            <div class="text">aaaaaaaaaaaaaa</div>
+        </div>
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <video autoplay loop muted>
+                <source src="/video/lofi_groom_no_editv2.mp4" type="video/mp4">
+            </video>
+            <div class="text">
+                <button class="text_btn1">Recommend</button>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <video autoplay loop muted>
+                <source src="/video/anime_-_103434 (Original).mp4" type="video/mp4">
+            </video>
+            <div class="text">
+                <button class="text_btn2">Recommend</button>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <video autoplay loop muted>
+                <source src="/video/anime_-_84574 (Original).mp4" type="video/mp4">
+            </video>
+            <div class="text">
+                <button class="text_btn3">Recommend</button>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <div class="mdot">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+</html>
