@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0);
+
 }
 
 .container {
@@ -15,10 +16,11 @@ body {
 }
 
 nav {
-    background-image: linear-gradient(0deg, rgba(247, 25, 136, 1) 3%, rgba(0, 0, 0, 1) 11%);
+    background-image: linear-gradient(0deg, rgba(247, 25, 136, 1) 3%, rgba(0, 0, 0, .15) 11%);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 .navcon {
@@ -33,12 +35,10 @@ nav {
 .navcon .logo img {
     width: 10rem;
     cursor: pointer;
-    transition: all 5s ease-in-out;
+
 }
 
-.navcon .logo img:hover {
-    transform: rotate(360deg);
-}
+
 
 .menu {
     display: flex;
@@ -96,9 +96,9 @@ nav {
 }
 
 main h3 {
-    
     color: rgb(255, 255, 255);
     font-size: 48px;
+
 }
 
 /*footer {
@@ -123,9 +123,9 @@ main h3 {
     }
 
     .menu li {
-        margin: -2rem 2rem;
-        padding-bottom: 5rem;
-
+        margin: 0 2rem;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
     }
 
     .menu li a {
@@ -146,12 +146,8 @@ main h3 {
 
     .navcon .logo img {
         width: 10rem;
+        margin-bottom: -5rem;
         cursor: pointer;
-        transition: all 5s ease-in-out;
-    }
-
-    .navcon .logo img:hover {
-        transform: rotate(360deg);
     }
 
     nav {
