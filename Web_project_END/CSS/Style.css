@@ -67,7 +67,7 @@ nav {
     cursor: pointer;
     position: absolute;
     right: 2rem;
-    top: 3.5rem;
+    top: 3.2rem;
 }
 
 .bar1,
@@ -147,6 +147,7 @@ main h3 {
     .navcon .logo img {
         width: 10rem;
         margin-bottom: -5rem;
+        margin-top: -0.5rem;
         cursor: pointer;
     }
 
