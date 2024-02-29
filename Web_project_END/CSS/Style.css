@@ -102,7 +102,7 @@ nav {
 /*slider*/
 .slider {
     height: 100vh;
-    position: relative;
+
 }
 
 .slider .list .item {
@@ -126,7 +126,7 @@ nav {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(to top, rgb(0, 0, 0) 40%, transparent);
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 30%, transparent);
 }
 
 .slider .list .item .content {
@@ -182,20 +182,61 @@ nav {
 
 .slider .list .item.active button {
     animation-delay: 1.5s;
-    margin-top: 1rem;
 }
 
-.arrows {
+.slider .list .item button {
+    margin-top: 1rem;
+    padding: 5px 40px;
+    font-size: 8px;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.slider .list .item button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.slider .list .item button:hover:before {
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.arrowp {
     position: absolute;
     top: 30%;
-    right: 50px;
+    right: 100px;
     z-index: 100;
 }
 
-.arrows button {
-    background-color: #eee5;
+.arrowp button {
+    background-color: rgba(238, 238, 238, 0.1);
     border: none;
-    font-family: monospace;
     width: 40px;
     height: 40px;
     border-radius: 5px;
@@ -204,9 +245,64 @@ nav {
     transition: .5s;
 }
 
-.arrows button:hover {
-    background-color: #eee;
-    color: black;
+.arrowp button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.arrowp button:hover:before {
+    opacity: 1;
+}
+
+.arrown {
+    position: absolute;
+    top: 30%;
+    right: 50px;
+    z-index: 100;
+}
+
+.arrown button {
+    background-color: rgba(238, 238, 238, 0.1);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.arrown button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.arrown button:hover:before {
+    opacity: 1;
 }
 
 .thumbnail {
@@ -255,27 +351,28 @@ nav {
 
 }
 
-/*footer {
-    background-color: rgba(3, 3, 3);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 2;
-}*/
+
 
 @media screen and (max-width: 678px) {
     .thumbnail {
         justify-content: start;
-
+        top: 70%;
+        background-color: rgb(0, 0, 0);
     }
 
     .slider .list .item .content h2 {
         font-size: 60px;
     }
+}
 
-    .arrows {
+@media screen and (max-width: 750px) {
+    .arrowp {
         display: none;
     }
 
+    .arrown {
+        display: none;
+    }
 }
 
 /*navbar*/
