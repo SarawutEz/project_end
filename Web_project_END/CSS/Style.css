@@ -31,13 +31,11 @@ nav {
     align-items: center;
     height: 65px;
     position: relative;
-
 }
 
 .navcon .logo img {
     width: 10rem;
     cursor: pointer;
-
 }
 
 
@@ -102,7 +100,7 @@ nav {
 /*slider*/
 .slider {
     height: 100vh;
-
+    position: relative;
 }
 
 .slider .list .item {
