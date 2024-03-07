@@ -199,6 +199,7 @@ nav {
     font-size: 8px;
     border-radius: 0.5rem;
     border: none;
+    cursor: pointer;
 }
 
 .slider .list .item button:before {
@@ -329,7 +330,7 @@ nav {
 }
 
 .thumbnail::-webkit-scrollbar {
-    width: 0;
+    background-image: linear-gradient(0deg, rgba(247, 25, 136, 1) 50%, rgba(0, 0, 0, .15) 100%);
 }
 
 .thumbnail .item {
@@ -428,7 +429,7 @@ nav {
 .cover {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 40px;
     width: 100%;
     margin-top: 1rem;
     box-sizing: border-box;
@@ -453,6 +454,57 @@ nav {
     border-radius: 10px;
 }
 
+.cover .cover_item .name {
+    margin: 0.5rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/*Main content*/
+.slider .list .item .Mine_Name {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 500px;
+    max-width: 80%;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+}
+
+.slider .list .item .Mine_Name p:nth-child(1) {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.slider .list .item .Mine_Name h2 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.Main_cover {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 80%;
+    margin-top: -15rem;
+    margin-left: 10%;
+    box-sizing: border-box;
+    z-index: 14;
+}
+
+.Main_cover .Main_item img {
+    width: 250px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Main_cover .Main_item .Main_content {
+    margin-top: 5%;
+    margin-left: 1rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
 
 @media screen and (max-width: 678px) {
     .thumbnail {
