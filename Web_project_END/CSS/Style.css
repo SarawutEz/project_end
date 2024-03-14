@@ -27,7 +27,8 @@ nav {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     z-index: 15;
     top: 0;
     flex: 0 0 auto;
@@ -339,6 +340,7 @@ nav {
 
 .thumbnail::-webkit-scrollbar {
     background-image: linear-gradient(0deg, rgba(247, 25, 136, 1) 50%, rgba(0, 0, 0, .15) 100%);
+    cursor: e-resize;
 }
 
 .thumbnail .item {
@@ -527,7 +529,7 @@ nav {
     width: 3rem;
     height: 3rem;
     border-radius: 2rem;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .Genre_name {
