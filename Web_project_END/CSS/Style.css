@@ -382,6 +382,7 @@ nav {
     align-items: center;
     flex-direction: column;
     flex: 0 0 auto;
+
 }
 
 .social-icon,
@@ -538,6 +539,15 @@ nav {
     text-align: center;
 }
 
+.Plot {
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+
 
 @media screen and (max-width: 678px) {
     .thumbnail {
@@ -638,14 +648,11 @@ nav {
     }
 
     .Main_cover .Main_item .Main_video iframe {
-        left: 0;
-        right: 0;
-        width: 80%;
+        margin-left: 0;
+        width: 100%;
         height: 100%;
         border: none;
+        position: relative;
     }
 
-    .footer {
-        top: 100%;
-    }
 }
