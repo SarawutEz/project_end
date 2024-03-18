@@ -179,6 +179,7 @@ nav {
 .thumbnail,
 .arrowp,
 .arrown,
+.Plot,
 .slider .list .item.active p:nth-child(3) {
     transform: translateY(30px);
     filter: blur(20px);
@@ -195,6 +196,10 @@ nav {
 }
 
 .slider .list .item.active button {
+    animation-delay: 1.5s;
+}
+
+.Plot {
     animation-delay: 1.5s;
 }
 
@@ -455,6 +460,7 @@ nav {
     width: 150px;
     height: 220px;
     flex-shrink: 0;
+    margin-top: 5%;
 }
 
 .cover .cover_item img {
@@ -496,7 +502,7 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap;
     max-width: 100%;
-    margin-top: -15rem;
+    margin-top: -15%;
     padding-left: 10rem;
     box-sizing: border-box;
     z-index: 14;
@@ -510,11 +516,13 @@ nav {
     border-radius: 10px;
 }
 
+
 .Main_cover .Main_item .Main_video iframe {
     position: absolute;
     width: 50%;
-    height: 100%;
+    min-height: 80%;
     margin-left: 10%;
+    border-radius: 1rem;
 }
 
 /*Genre*/
@@ -522,7 +530,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 4rem;
+
 }
 
 .Genre .Genre_item img {
@@ -539,14 +547,61 @@ nav {
     text-align: center;
 }
 
+.Genre_item:hover {
+    transform: scale(1.1);
+}
+
 .Plot {
     color: rgb(255, 255, 255);
     margin-top: 2rem;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 3%;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.Top_cast {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.Top_item {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.Top_cast .Top_item img {
+    margin: 1rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 5rem;
+    background: rgba(255, 255, 255, 0.1);
+    object-fit: cover;
+}
+
+.Top_name {
+    margin-top: -1rem;
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 
+.Top_Char {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.Top_Char .Hero {
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 0.4rem;
+    margin-top: 0.2rem;
+}
 
 
 @media screen and (max-width: 678px) {
@@ -636,6 +691,7 @@ nav {
     .menu_active {
         display: block;
     }
+
 }
 
 @media screen and (max-width: 1035px) {
@@ -645,12 +701,13 @@ nav {
         flex-direction: column;
         align-items: center;
         padding: 0;
+        margin-top: -50%;
     }
 
     .Main_cover .Main_item .Main_video iframe {
         margin-left: 0;
         width: 100%;
-        height: 100%;
+        height: 35vh;
         border: none;
         position: relative;
     }
