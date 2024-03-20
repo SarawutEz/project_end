@@ -63,3 +63,5 @@ thumbnails.forEach((thumbnail, index) => {
     showSlider();
   })
 })
+
+

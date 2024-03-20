@@ -604,13 +604,31 @@ nav {
 }
 
 .bg_comments {
-    background-color: rgb(255, 255, 255);
-    border-radius: 1rem;
-    margin: 5%;
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(0deg, rgb(255, 255, 255, 0.1) 10%, rgba(0, 0, 0, 0.1) 80%);
+    border-radius: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
+.fb-comments {
+    margin: 5%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+
+.bg_link {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(0deg, rgb(255, 255, 255) 20%, rgba(0, 0, 0, .15) 100%);
+    border-radius: 1rem;
+    margin: 10%;
+}
+
+.fb-like {
+    margin: 5%;
+}
 
 @media screen and (max-width: 678px) {
     .thumbnail {
@@ -629,6 +647,12 @@ nav {
 
     .slider .list .item .Mine_Name h2 {
         font-size: 50px;
+    }
+
+    .bg_link {
+        padding-left: 5rem;
+        margin-top: 10%;
+        width: 80%;
     }
 
 }
